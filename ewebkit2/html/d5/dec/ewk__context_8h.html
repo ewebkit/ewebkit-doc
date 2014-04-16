@@ -214,6 +214,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac8873997824fda1698d6630381d2592c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f94580079bec90be4a90888d511eab1"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/ewk__context_8h.html#a8f94580079bec90be4a90888d511eab1">ewk_context_tls_error_policy_set</a> (<a class="el" href="../../d5/dec/ewk__context_8h.html#ae13079f88615fb07c0af2e01a48ebb15">Ewk_Context</a> *context, <a class="el" href="../../d5/dec/ewk__context_8h.html#a9a7cbf91397580a591782363b532bce0">Ewk_TLS_Error_Policy</a> tls_error_policy)</td></tr>
 <tr class="separator:a8f94580079bec90be4a90888d511eab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d8de4a402a51ea1d113a0bf24588d5"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/ewk__context_8h.html#aa5d8de4a402a51ea1d113a0bf24588d5">ewk_context_preferred_languages_set</a> (Eina_List *languages)</td></tr>
+<tr class="separator:aa5d8de4a402a51ea1d113a0bf24588d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the context API. </p>
@@ -735,6 +737,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa5d8de4a402a51ea1d113a0bf24588d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI void ewk_context_preferred_languages_set </td>
+          <td>(</td>
+          <td class="paramtype">Eina_List *&#160;</td>
+          <td class="paramname"><em>languages</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the list of preferred languages.</p>
+<p>Sets the list of preferred langages. This list will be used to build the "Accept-Language" header that will be included in the network requests. Client can pass <code>NULL</code> for languages to clear what is set before.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">languages</td><td>the list of preferred languages (char* as data) or <code>NULL</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>all contexts will be affected. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a47f07e63d5889d03bc2d210f1149ad48"></a>
 <div class="memitem">
 <div class="memproto">
@@ -953,7 +980,7 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keywordtype">char</span> *contents_data = NULL;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> contents_length = 0;</div>
 <div class="line"></div>
-<div class="line">    path = ewk_url_scheme_request_path_get(request);</div>
+<div class="line">    path = <a class="code" href="../../d5/d86/ewk__url__scheme__request_8h.html#a72e8e8e4a964d04d6ab759199d14d882">ewk_url_scheme_request_path_get</a>(request);</div>
 <div class="line">    <span class="keywordflow">if</span> (!strcmp(path, <span class="stringliteral">&quot;plugins&quot;</span>)) {</div>
 <div class="line">        <span class="comment">// Initialize contents_data with the contents of plugins about page, and set its length to contents_length</span></div>
 <div class="line">    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(path, <span class="stringliteral">&quot;memory&quot;</span>)) {</div>
@@ -967,7 +994,7 @@ Functions</h2></td></tr>
 <div class="line">        contents_length = strlen(contents);</div>
 <div class="line">        eina_strbuf_free(buf);</div>
 <div class="line">    }</div>
-<div class="line">    ewk_url_scheme_request_finish(request, contents_data, contents_length, <span class="stringliteral">&quot;text/html&quot;</span>);</div>
+<div class="line">    <a class="code" href="../../d5/d86/ewk__url__scheme__request_8h.html#a11071528f902781620e7ae2eccc06e9c">ewk_url_scheme_request_finish</a>(request, contents_data, contents_length, <span class="stringliteral">&quot;text/html&quot;</span>);</div>
 <div class="line">    free(contents_data);</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
@@ -1012,7 +1039,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 11 2014 09:58:31 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 17 2014 04:17:08 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
