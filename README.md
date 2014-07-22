@@ -8,10 +8,6 @@ How to build:
 # make the link of your webkit directory
 ln -s /path/of/your/webkit/folder efl-webkit
 
-# For ewebkit
-cd ewebkit
-doxygen
-
 # For ewebkit2
 cd ewebkit2
 doxygen
