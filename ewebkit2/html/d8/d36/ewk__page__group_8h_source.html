@@ -117,29 +117,32 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef ewk_page_group_h</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ewk_page_group_h</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;Eina.h&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>EwkObject <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;EAPI <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a2eb359fd6376895afc6ee7c62e996c4c">ewk_page_group_create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *identifier);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;EAPI Eina_Bool <a class="code" href="../../d8/d36/ewk__page__group_8h.html#afcc2754cbe511a69edb9b62919f36709">ewk_page_group_user_style_sheet_add</a>(<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group, <span class="keyword">const</span> <span class="keywordtype">char</span> *source, <span class="keyword">const</span> <span class="keywordtype">char</span> *base_url, Eina_List *white_list, Eina_List *black_list, Eina_Bool main_frame_only);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;EAPI Eina_Bool <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a05c8c9d7975a776a856f1c668957347c">ewk_page_group_user_style_sheets_remove_all</a>(<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d2d/ewk__settings_8h.html" title="Describes the settings API. ">ewk_settings.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;Eina.h&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">   46</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>EwkObject <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;EAPI <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a2eb359fd6376895afc6ee7c62e996c4c">ewk_page_group_create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *identifier);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;EAPI <a class="code" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a48bcae5db63ac5bbc9c066a136a915ef">ewk_page_group_settings_get</a>(<span class="keyword">const</span> <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;EAPI Eina_Bool <a class="code" href="../../d8/d36/ewk__page__group_8h.html#afcc2754cbe511a69edb9b62919f36709">ewk_page_group_user_style_sheet_add</a>(<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group, <span class="keyword">const</span> <span class="keywordtype">char</span> *source, <span class="keyword">const</span> <span class="keywordtype">char</span> *base_url, Eina_List *white_list, Eina_List *black_list, Eina_Bool main_frame_only);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // ewk_page_group_h</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;EAPI Eina_Bool <a class="code" href="../../d8/d36/ewk__page__group_8h.html#a05c8c9d7975a776a856f1c668957347c">ewk_page_group_user_style_sheets_remove_all</a>(<a class="code" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // ewk_page_group_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 17 2014 04:17:08 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

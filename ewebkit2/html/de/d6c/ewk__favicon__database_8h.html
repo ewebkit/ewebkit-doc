@@ -103,18 +103,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Typedefs</h2></td></tr>
 <tr class="memitem:acb1fb717017c8f7333c30bfb34b23a53"><td class="memItemLeft" align="right" valign="top">typedef struct EwkFaviconDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a></td></tr>
 <tr class="separator:acb1fb717017c8f7333c30bfb34b23a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc2ad3febe7cffc0a941fb4bcab84db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bc2ad3febe7cffc0a941fb4bcab84db"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a2bc2ad3febe7cffc0a941fb4bcab84db">Ewk_Favicon_Database_Icon_Change_Cb</a> )(const char *page_url, void *event_info)</td></tr>
-<tr class="memdesc:a2bc2ad3febe7cffc0a941fb4bcab84db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type for use with ewk_favicon_database_icon_change_callback_add and ewk_favicon_database_icon_change_callback_del. <br/></td></tr>
-<tr class="separator:a2bc2ad3febe7cffc0a941fb4bcab84db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69c8ab94b4d2fee8db9e0f1dd5bf859"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af69c8ab94b4d2fee8db9e0f1dd5bf859"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af69c8ab94b4d2fee8db9e0f1dd5bf859">Ewk_Favicon_Database_Icon_Change_Cb</a> )(<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, const char *url, void *data)</td></tr>
+<tr class="memdesc:af69c8ab94b4d2fee8db9e0f1dd5bf859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type for use with ewk_favicon_database_icon_change_callback_add and ewk_favicon_database_icon_change_callback_del. <br/></td></tr>
+<tr class="separator:af69c8ab94b4d2fee8db9e0f1dd5bf859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2290c8085a3ac76e4c2d3bcf124a136"><td class="memItemLeft" align="right" valign="top">EAPI Evas_Object *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#ae2290c8085a3ac76e4c2d3bcf124a136">ewk_favicon_database_icon_get</a> (<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, const char *page_url, Evas *evas)</td></tr>
-<tr class="separator:ae2290c8085a3ac76e4c2d3bcf124a136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35da7c65d2b7831aff79a44232bb3164"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a35da7c65d2b7831aff79a44232bb3164">ewk_favicon_database_icon_change_callback_add</a> (<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, <a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a2bc2ad3febe7cffc0a941fb4bcab84db">Ewk_Favicon_Database_Icon_Change_Cb</a> callback, void *data)</td></tr>
+<tr class="memitem:acedda094ec4fd958ca03761ae50ff222"><td class="memItemLeft" align="right" valign="top">EAPI Evas_Object *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acedda094ec4fd958ca03761ae50ff222">ewk_favicon_database_icon_get</a> (<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, const char *url, Evas *evas)</td></tr>
+<tr class="separator:acedda094ec4fd958ca03761ae50ff222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35da7c65d2b7831aff79a44232bb3164"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a35da7c65d2b7831aff79a44232bb3164">ewk_favicon_database_icon_change_callback_add</a> (<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, <a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af69c8ab94b4d2fee8db9e0f1dd5bf859">Ewk_Favicon_Database_Icon_Change_Cb</a> callback, void *data)</td></tr>
 <tr class="separator:a35da7c65d2b7831aff79a44232bb3164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c00214ec13c0307834195d7a3c7a8d"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af3c00214ec13c0307834195d7a3c7a8d">ewk_favicon_database_icon_change_callback_del</a> (<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, <a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a2bc2ad3febe7cffc0a941fb4bcab84db">Ewk_Favicon_Database_Icon_Change_Cb</a> callback)</td></tr>
+<tr class="memitem:af3c00214ec13c0307834195d7a3c7a8d"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af3c00214ec13c0307834195d7a3c7a8d">ewk_favicon_database_icon_change_callback_del</a> (<a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#acb1fb717017c8f7333c30bfb34b23a53">Ewk_Favicon_Database</a> *database, <a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af69c8ab94b4d2fee8db9e0f1dd5bf859">Ewk_Favicon_Database_Icon_Change_Cb</a> callback)</td></tr>
 <tr class="separator:af3c00214ec13c0307834195d7a3c7a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -147,7 +147,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a2bc2ad3febe7cffc0a941fb4bcab84db">Ewk_Favicon_Database_Icon_Change_Cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af69c8ab94b4d2fee8db9e0f1dd5bf859">Ewk_Favicon_Database_Icon_Change_Cb</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -168,10 +168,14 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">database</td><td>database object to register the callback </td></tr>
     <tr><td class="paramname">callback</td><td>callback function to be called when an icon changes </td></tr>
-    <tr><td class="paramname">data</td><td>the data pointer that was to be passed to the callback </td></tr>
+    <tr><td class="paramname">data</td><td>the data pointer that was to be passed to the callback</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>In order to enable the favicons database, ewk_context_favicon_database_direct_set must be called.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d5/dec/ewk__context_8h.html#aee4442016d564a771936bd39f0edc8e6">ewk_context_favicon_database_directory_set</a> </dd>
+<dd>
+<a class="el" href="../../d5/dec/ewk__context_8h.html#a0087caf68ae249c4bda30552de1edf24">ewk_context_favicon_database_get</a> </dd></dl>
 
 </div>
 </div>
@@ -188,7 +192,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a2bc2ad3febe7cffc0a941fb4bcab84db">Ewk_Favicon_Database_Icon_Change_Cb</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#af69c8ab94b4d2fee8db9e0f1dd5bf859">Ewk_Favicon_Database_Icon_Change_Cb</a>&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -202,14 +206,19 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">database</td><td>database object to unregister the callback. </td></tr>
-    <tr><td class="paramname">callback</td><td>callback function to unregister </td></tr>
+    <tr><td class="paramname">callback</td><td>callback function to unregister</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../de/d6c/ewk__favicon__database_8h.html#a35da7c65d2b7831aff79a44232bb3164">ewk_favicon_database_icon_change_callback_add</a> </dd>
+<dd>
+<a class="el" href="../../d5/dec/ewk__context_8h.html#aee4442016d564a771936bd39f0edc8e6">ewk_context_favicon_database_directory_set</a> </dd>
+<dd>
+<a class="el" href="../../d5/dec/ewk__context_8h.html#a0087caf68ae249c4bda30552de1edf24">ewk_context_favicon_database_get</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ae2290c8085a3ac76e4c2d3bcf124a136"></a>
+<a class="anchor" id="acedda094ec4fd958ca03761ae50ff222"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -223,7 +232,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>page_url</em>, </td>
+          <td class="paramname"><em>url</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -238,23 +247,27 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieves from the database the favicon for the given <em>page_url</em> </p>
+<p>Retrieves from the database the favicon for the given <em>url</em> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">database</td><td>database object to query </td></tr>
-    <tr><td class="paramname">page_url</td><td>URL of the page to get the favicon for </td></tr>
+    <tr><td class="paramname">url</td><td>URL of the page to get the favicon for </td></tr>
     <tr><td class="paramname">evas</td><td>The canvas to add the favicon to</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The favicon as an Evas_Object if successful, <code>NULL</code> otherwise. The returned Evas_Object needs to be freed after use. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The favicon as an Evas_Object if successful, <code>NULL</code> otherwise. The returned Evas_Object needs to be freed after use.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In order to enable the favicons database, ewk_context_favicon_database_direct_set must be called.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d5/dec/ewk__context_8h.html#aee4442016d564a771936bd39f0edc8e6">ewk_context_favicon_database_directory_set</a> </dd>
+<dd>
+<a class="el" href="../../d5/dec/ewk__context_8h.html#a0087caf68ae249c4bda30552de1edf24">ewk_context_favicon_database_get</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 17 2014 04:17:08 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

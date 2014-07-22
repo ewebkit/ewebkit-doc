@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../d8/d36/ewk__page__group_8h_source.html">ewk_page_group.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../dd/da5/ewk__popup__menu_8h_source.html">ewk_popup_menu.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../dd/d10/ewk__security__origin_8h_source.html">ewk_security_origin.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d4/d2d/ewk__settings_8h_source.html">ewk_settings.h</a>&quot;</code><br/>
 <code>#include &quot;ewk_touch.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d4/d16/ewk__url__request_8h_source.html">ewk_url_request.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d9/dca/ewk__url__response_8h_source.html">ewk_url_response.h</a>&quot;</code><br/>
@@ -165,6 +164,8 @@ typedef struct <a class="el" href="../../d7/dd0/structEwk__CSS__Size.html">Ewk_C
 <tr class="memitem:a34331d3288a2177678237774d02f98aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34331d3288a2177678237774d02f98aa"></a>
 typedef enum <a class="el" href="../../d6/daf/ewk__view_8h.html#a8a6075869c68e95d5082b2e4c2e80929">Ewk_Find_Options</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Ewk_Find_Options</b></td></tr>
 <tr class="separator:a34331d3288a2177678237774d02f98aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7673e649cf2d5b89401e011972fb63d2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d6/daf/ewk__view_8h.html#a3ab42e026657a4e9894cb90ef75ee3a0">Ewk_Focus_Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a7673e649cf2d5b89401e011972fb63d2">Ewk_Focus_Direction</a></td></tr>
+<tr class="separator:a7673e649cf2d5b89401e011972fb63d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1239f0b734f593e246aaf4fac5210a8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1239f0b734f593e246aaf4fac5210a8a"></a>
 typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a1239f0b734f593e246aaf4fac5210a8a">Ewk_View_Script_Execute_Cb</a> )(Evas_Object *o, const char *return_value, void *user_data)</td></tr>
 <tr class="memdesc:a1239f0b734f593e246aaf4fac5210a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type for use with <a class="el" href="../../d6/daf/ewk__view_8h.html#a22c35c1e5eff0aa98ee72630dfd930d5">ewk_view_script_execute()</a> <br/></td></tr>
@@ -211,6 +212,10 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:ab5787b452569462d0441b946f9a1002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab42e026657a4e9894cb90ef75ee3a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a3ab42e026657a4e9894cb90ef75ee3a0">Ewk_Focus_Direction</a> { <b>EWK_FOCUS_DIRECTION_FORWARD</b> = 0, 
+<b>EWK_FOCUS_DIRECTION_BACKWARD</b>
+ }</td></tr>
+<tr class="separator:a3ab42e026657a4e9894cb90ef75ee3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -230,16 +235,12 @@ Functions</h2></td></tr>
 <tr class="separator:a2b0cfe61e005dcee0d123fc0b3869304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe6c8ef696c22744e347f5db34385eb"><td class="memItemLeft" align="right" valign="top">EAPI const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a1fe6c8ef696c22744e347f5db34385eb">ewk_view_url_get</a> (const Evas_Object *o)</td></tr>
 <tr class="separator:a1fe6c8ef696c22744e347f5db34385eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14198bac541be348512de4307bb8e765"><td class="memItemLeft" align="right" valign="top">EAPI Evas_Object *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a14198bac541be348512de4307bb8e765">ewk_view_favicon_get</a> (const Evas_Object *o)</td></tr>
-<tr class="separator:a14198bac541be348512de4307bb8e765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe28ffb3cdc10524d010312772f42f63"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#abe28ffb3cdc10524d010312772f42f63">ewk_view_reload</a> (Evas_Object *o)</td></tr>
 <tr class="separator:abe28ffb3cdc10524d010312772f42f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41e54dc231e766ce10a15d8d233cafc6"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a41e54dc231e766ce10a15d8d233cafc6">ewk_view_reload_bypass_cache</a> (Evas_Object *o)</td></tr>
 <tr class="separator:a41e54dc231e766ce10a15d8d233cafc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee1cc6bbe9c808cebeceecbd4d1c682"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a8ee1cc6bbe9c808cebeceecbd4d1c682">ewk_view_stop</a> (Evas_Object *o)</td></tr>
 <tr class="separator:a8ee1cc6bbe9c808cebeceecbd4d1c682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabaadc330150ba63aba57cda32e1c79c"><td class="memItemLeft" align="right" valign="top">EAPI <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#aabaadc330150ba63aba57cda32e1c79c">ewk_view_settings_get</a> (const Evas_Object *o)</td></tr>
-<tr class="separator:aabaadc330150ba63aba57cda32e1c79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027a33cf28bf23140990ea4982379ecb"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a027a33cf28bf23140990ea4982379ecb">ewk_view_back</a> (Evas_Object *o)</td></tr>
 <tr class="separator:a027a33cf28bf23140990ea4982379ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7b7f232193a7fa14596319d748ee0d"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a3a7b7f232193a7fa14596319d748ee0d">ewk_view_forward</a> (Evas_Object *o)</td></tr>
@@ -316,6 +317,10 @@ Functions</h2></td></tr>
 <tr class="separator:af44099f303cfe02bb6b7a8f73eadb1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4812baf66e20a0304824ff15aaf7b94"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#ab4812baf66e20a0304824ff15aaf7b94">ewk_view_layout_fixed_get</a> (const Evas_Object *o)</td></tr>
 <tr class="separator:ab4812baf66e20a0304824ff15aaf7b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa15706b66f5af752cadc227fa53e335"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#afa15706b66f5af752cadc227fa53e335">ewk_view_layout_fixed_size_set</a> (const Evas_Object *o, Evas_Coord width, Evas_Coord height)</td></tr>
+<tr class="separator:afa15706b66f5af752cadc227fa53e335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0036948f842ee7d9bb09767f8e2690"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#aac0036948f842ee7d9bb09767f8e2690">ewk_view_layout_fixed_size_get</a> (const Evas_Object *o, Evas_Coord *width, Evas_Coord *height)</td></tr>
+<tr class="separator:aac0036948f842ee7d9bb09767f8e2690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f704e8453ca4102afdb500cdbe84742"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#a2f704e8453ca4102afdb500cdbe84742">ewk_view_bg_color_set</a> (Evas_Object *o, int r, int g, int b, int a)</td></tr>
 <tr class="separator:a2f704e8453ca4102afdb500cdbe84742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa36e0c97f09bce30569181556e2d55"><td class="memItemLeft" align="right" valign="top">EAPI void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/daf/ewk__view_8h.html#acaa36e0c97f09bce30569181556e2d55">ewk_view_bg_color_get</a> (const Evas_Object *o, int *r, int *g, int *b, int *a)</td></tr>
@@ -337,8 +342,8 @@ Functions</h2></td></tr>
 <li>"download,finished", Ewk_Download_Job*: reports that a download completed successfully.</li>
 <li>"download,request", Ewk_Download_Job*: reports that a new download has been requested. The client should set the destination path by calling <a class="el" href="../../d2/da9/ewk__download__job_8h.html#ae59639d4c0eb7bfa7adfc091c15d14e6">ewk_download_job_destination_set()</a> or the download will fail.</li>
 <li>"file,chooser,request", Ewk_File_Chooser_Request*: reports that a request has been made for the user to choose a file (or several) on the file system. Call ewk_file_chooser_request_ref() on the request object to process it asynchronously.</li>
+<li>"focus,notfound", Ewk_Focus_Direction*: reports that there was no element to be focused on the given direction. The user can handle next focus behavior using the signal.</li>
 <li>"form,submission,request", Ewk_Form_Submission_Request*: Reports that a form request is about to be submitted. The Ewk_Form_Submission_Request passed contains information about the text fields of the form. This is typically used to store login information that can be used later to pre-fill the form. The form will not be submitted until <a class="el" href="../../da/df4/ewk__form__submission__request_8h.html#ad528593bf85f04ac8e363ca12adb25d7">ewk_form_submission_request_submit()</a> is called. It is possible to handle the form submission request asynchronously, by simply calling ewk_form_submission_request_ref() on the request and calling <a class="el" href="../../da/df4/ewk__form__submission__request_8h.html#ad528593bf85f04ac8e363ca12adb25d7">ewk_form_submission_request_submit()</a> when done to continue with the form submission. If the last reference is removed on a <a class="el" href="../../da/df4/ewk__form__submission__request_8h.html#ae94c551ffbd7547770cb2f380b4f5e05">Ewk_Form_Submission_Request</a> and the form has not been submitted yet, <a class="el" href="../../da/df4/ewk__form__submission__request_8h.html#ad528593bf85f04ac8e363ca12adb25d7">ewk_form_submission_request_submit()</a> will be called automatically.</li>
-<li>"favicon,changed", void: reports that the view's favicon has changed. The favicon can be queried using <a class="el" href="../../d6/daf/ewk__view_8h.html#a14198bac541be348512de4307bb8e765">ewk_view_favicon_get()</a>.</li>
 <li>"load,error", const Ewk_Error*: reports main frame load failed.</li>
 <li>"load,finished", void: reports load finished.</li>
 <li>"load,progress", double*: load progress has changed (value from 0.0 to 1.0).</li>
@@ -440,6 +445,19 @@ EWK_VIEW_SMART_CLASS_INIT_VERSION </dd>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a7673e649cf2d5b89401e011972fb63d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="../../d6/daf/ewk__view_8h.html#a3ab42e026657a4e9894cb90ef75ee3a0">Ewk_Focus_Direction</a>  <a class="el" href="../../d6/daf/ewk__view_8h.html#a3ab42e026657a4e9894cb90ef75ee3a0">Ewk_Focus_Direction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enum values used to set focus direction. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad6768584092707ddcfb276379a59666c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -503,6 +521,19 @@ EWK_VIEW_SMART_CLASS_INIT_VERSION </dd>
 <p>show highlight </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a class="anchor" id="a3ab42e026657a4e9894cb90ef75ee3a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/daf/ewk__view_8h.html#a3ab42e026657a4e9894cb90ef75ee3a0">Ewk_Focus_Direction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enum values used to set focus direction. </p>
 
 </div>
 </div>
@@ -975,30 +1006,6 @@ EWK_VIEW_SMART_CLASS_INIT_VERSION </dd>
 
 </div>
 </div>
-<a class="anchor" id="a14198bac541be348512de4307bb8e765"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EAPI Evas_Object* ewk_view_favicon_get </td>
-          <td>(</td>
-          <td class="paramtype">const Evas_Object *&#160;</td>
-          <td class="paramname"><em>o</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the current favicon of view object.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>view object to get current icon URL</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>current favicon on success or <code>NULL</code> if unavailable or on failure. The returned Evas_Object needs to be freed after use. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a1c0b14d2b762d3af83c6483ee97a0df6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1278,6 +1285,89 @@ EWK_VIEW_SMART_CLASS_INIT_VERSION </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>EINA_TRUE</code> on success, or <code>EINA_FALSE</code> on failure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac0036948f842ee7d9bb09767f8e2690"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI void ewk_view_layout_fixed_size_get </td>
+          <td>(</td>
+          <td class="paramtype">const Evas_Object *&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evas_Coord *&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evas_Coord *&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the fixed layout size of current web page.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>view object to query the size</td></tr>
+    <tr><td class="paramname">width</td><td>pointer to an integer value in which to get the width of fixed layout </td></tr>
+    <tr><td class="paramname">height</td><td>pointer to an integer value in which to get the height of fixed layout </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afa15706b66f5af752cadc227fa53e335"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI void ewk_view_layout_fixed_size_set </td>
+          <td>(</td>
+          <td class="paramtype">const Evas_Object *&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evas_Coord&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evas_Coord&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets size of fixed layout to web page.</p>
+<p>The webview size will be set with given size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>view object to set fixed layout </td></tr>
+    <tr><td class="paramname">width</td><td>an integer value in which to set width of fixed layout </td></tr>
+    <tr><td class="paramname">height</td><td>an integer value in which to set height of fixed layout </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1764,30 +1854,6 @@ EWK_VIEW_SMART_CLASS_INIT_VERSION </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>EINA_TRUE</code> on success or <code>EINA_FALSE</code> on failure </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aabaadc330150ba63aba57cda32e1c79c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EAPI <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a>* ewk_view_settings_get </td>
-          <td>(</td>
-          <td class="paramtype">const Evas_Object *&#160;</td>
-          <td class="paramname"><em>o</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gets the Ewk_Settings of this view.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>view object to get Ewk_Settings</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the Ewk_Settings of this view or <code>NULL</code> on failure </dd></dl>
 
 </div>
 </div>
@@ -2289,7 +2355,7 @@ EWK_VIEW_SMART_CLASS_INIT_VERSION </dd>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 17 2014 04:17:09 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

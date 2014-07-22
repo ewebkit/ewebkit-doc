@@ -95,7 +95,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <p>Describes the Ewk Page Group API.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;Eina.h&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d4/d2d/ewk__settings_8h_source.html">ewk_settings.h</a>&quot;</code><br/>
+<code>#include &lt;Eina.h&gt;</code><br/>
 </div>
 <p><a href="../../d8/d36/ewk__page__group_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -108,6 +109,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a2eb359fd6376895afc6ee7c62e996c4c"><td class="memItemLeft" align="right" valign="top">EAPI <a class="el" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/ewk__page__group_8h.html#a2eb359fd6376895afc6ee7c62e996c4c">ewk_page_group_create</a> (const char *identifier)</td></tr>
 <tr class="separator:a2eb359fd6376895afc6ee7c62e996c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bcae5db63ac5bbc9c066a136a915ef"><td class="memItemLeft" align="right" valign="top">EAPI <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/ewk__page__group_8h.html#a48bcae5db63ac5bbc9c066a136a915ef">ewk_page_group_settings_get</a> (const <a class="el" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group)</td></tr>
+<tr class="separator:a48bcae5db63ac5bbc9c066a136a915ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc2754cbe511a69edb9b62919f36709"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/ewk__page__group_8h.html#afcc2754cbe511a69edb9b62919f36709">ewk_page_group_user_style_sheet_add</a> (<a class="el" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group, const char *source, const char *base_url, Eina_List *white_list, Eina_List *black_list, Eina_Bool main_frame_only)</td></tr>
 <tr class="separator:afcc2754cbe511a69edb9b62919f36709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c8c9d7975a776a856f1c668957347c"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d36/ewk__page__group_8h.html#a05c8c9d7975a776a856f1c668957347c">ewk_page_group_user_style_sheets_remove_all</a> (<a class="el" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *page_group)</td></tr>
@@ -148,6 +151,30 @@ Functions</h2></td></tr>
 <p>The returned Ewk_Page_Group object <b>should</b> be unref'ed after use.</p>
 <dl class="section return"><dt>Returns</dt><dd>Ewk_Page_Group object on success or <code>NULL</code> on failure</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../dc/d2a/ewk__object_8h.html#a8a06d845810d222912b834444692ca7a">ewk_object_unref</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48bcae5db63ac5bbc9c066a136a915ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a>* ewk_page_group_settings_get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d36/ewk__page__group_8h.html#a00c19137da5e30a811e227a1f2a2391d">Ewk_Page_Group</a> *&#160;</td>
+          <td class="paramname"><em>page_group</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the Ewk_Settings of this <em>page_group</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page_group</td><td>Ewk_Page_Group object to get Ewk_Settings</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the Ewk_Settings instance or <code>NULL</code> on failure </dd></dl>
 
 </div>
 </div>
@@ -241,7 +268,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 17 2014 04:17:08 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

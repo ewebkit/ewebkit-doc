@@ -147,6 +147,8 @@ Functions</h2></td></tr>
 <tr class="separator:a542b9deae77a232e0caaf21f0b62c6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b4e91291a47d2f15fb2990f5b03c54"><td class="memItemLeft" align="right" valign="top">EAPI double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da9/ewk__download__job_8h.html#a78b4e91291a47d2f15fb2990f5b03c54">ewk_download_job_elapsed_time_get</a> (const <a class="el" href="../../d2/da9/ewk__download__job_8h.html#a0ea8f3dc2a1a82d278a9c18a71715c9e">Ewk_Download_Job</a> *download)</td></tr>
 <tr class="separator:a78b4e91291a47d2f15fb2990f5b03c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b18ab8f9965a1808f1521a82992c5d"><td class="memItemLeft" align="right" valign="top">EAPI uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da9/ewk__download__job_8h.html#af1b18ab8f9965a1808f1521a82992c5d">ewk_download_job_received_data_size_get</a> (const <a class="el" href="../../d2/da9/ewk__download__job_8h.html#a0ea8f3dc2a1a82d278a9c18a71715c9e">Ewk_Download_Job</a> *download)</td></tr>
+<tr class="separator:af1b18ab8f9965a1808f1521a82992c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the Download Job API. </p>
@@ -341,6 +343,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af1b18ab8f9965a1808f1521a82992c5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI uint64_t ewk_download_job_received_data_size_get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/da9/ewk__download__job_8h.html#a0ea8f3dc2a1a82d278a9c18a71715c9e">Ewk_Download_Job</a> *&#160;</td>
+          <td class="paramname"><em>download</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the data size, already downloaded.</p>
+<p>If the download finished, had an error or was cancelled this is the data size between its start and the end.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">download</td><td>a <a class="el" href="../../d2/da9/ewk__download__job_8h.html#a0ea8f3dc2a1a82d278a9c18a71715c9e">Ewk_Download_Job</a> to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the size of the data already downloaded, since the download was started or 0.0 in case of failure. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7869fe85c74a8e7f40f6b281805ef3a0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +469,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 17 2014 04:17:08 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

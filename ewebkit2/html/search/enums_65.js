@@ -9,6 +9,7 @@ var searchData=
   ['ewk_5fdownload_5fjob_5fstate',['Ewk_Download_Job_State',['../d2/da9/ewk__download__job_8h.html#a278e5cfdea09b81474c146ac555f7f88',1,'ewk_download_job.h']]],
   ['ewk_5ferror_5ftype',['Ewk_Error_Type',['../d9/dab/ewk__error_8h.html#a3268f21e241ffcdd2f588d43b35b946c',1,'ewk_error.h']]],
   ['ewk_5ffind_5foptions',['Ewk_Find_Options',['../d6/daf/ewk__view_8h.html#a8a6075869c68e95d5082b2e4c2e80929',1,'ewk_view.h']]],
+  ['ewk_5ffocus_5fdirection',['Ewk_Focus_Direction',['../d6/daf/ewk__view_8h.html#a3ab42e026657a4e9894cb90ef75ee3a0',1,'ewk_view.h']]],
   ['ewk_5fnavigation_5ftype',['Ewk_Navigation_Type',['../d3/d08/ewk__navigation__policy__decision_8h.html#aa1bdc646f41f64373f0fc9bbf5178033',1,'ewk_navigation_policy_decision.h']]],
   ['ewk_5fpage_5fcontents_5ftype',['Ewk_Page_Contents_Type',['../d6/daf/ewk__view_8h.html#a45b630c96db5f451b81fd7494e0adb5c',1,'ewk_view.h']]],
   ['ewk_5fpagination_5fmode',['Ewk_Pagination_Mode',['../d6/daf/ewk__view_8h.html#ab5787b452569462d0441b946f9a1002b',1,'ewk_view.h']]],

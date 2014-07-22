@@ -174,6 +174,10 @@ Functions</h2></td></tr>
 <tr class="separator:a3b09a3a28caebc576dca7827045bdb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360515aa5e42c6a06cac7a9688bacadd"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2d/ewk__settings_8h.html#a360515aa5e42c6a06cac7a9688bacadd">ewk_settings_text_autosizing_enabled_get</a> (const <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *settings)</td></tr>
 <tr class="separator:a360515aa5e42c6a06cac7a9688bacadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a8cbc22a060d1f78770e3009636d72"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2d/ewk__settings_8h.html#ab1a8cbc22a060d1f78770e3009636d72">ewk_settings_web_security_enabled_set</a> (<a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *settings, Eina_Bool enable)</td></tr>
+<tr class="separator:ab1a8cbc22a060d1f78770e3009636d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b00dfc3562994c597e119717fb8a8c6"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2d/ewk__settings_8h.html#a5b00dfc3562994c597e119717fb8a8c6">ewk_settings_web_security_enabled_get</a> (const <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *settings)</td></tr>
+<tr class="separator:a5b00dfc3562994c597e119717fb8a8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78355f2d58ed2823fcc5fd0abeb9f465"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2d/ewk__settings_8h.html#a78355f2d58ed2823fcc5fd0abeb9f465">ewk_settings_spatial_navigation_enabled_set</a> (<a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *settings, Eina_Bool enable)</td></tr>
 <tr class="separator:a78355f2d58ed2823fcc5fd0abeb9f465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a796cc39d89e47134df24634b2a27cc59"><td class="memItemLeft" align="right" valign="top">EAPI Eina_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2d/ewk__settings_8h.html#a796cc39d89e47134df24634b2a27cc59">ewk_settings_spatial_navigation_enabled_get</a> (const <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *settings)</td></tr>
@@ -181,7 +185,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the settings API. </p>
-<dl class="section note"><dt>Note</dt><dd>The ewk_settings is for setting the preference of specific ewk_view. We can get the ewk_settings from ewk_view using <a class="el" href="../../d6/daf/ewk__view_8h.html#aabaadc330150ba63aba57cda32e1c79c">ewk_view_settings_get()</a> API. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The ewk_settings is for setting the preference of specific ewk_view. We can get the ewk_settings from ewk_view using ewk_view_settings_get() API. </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ada7eb98b6e90b8cbb4240688e4a93f0b"></a>
 <div class="memitem">
@@ -1288,10 +1292,71 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5b00dfc3562994c597e119717fb8a8c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI Eina_Bool ewk_settings_web_security_enabled_get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *&#160;</td>
+          <td class="paramname"><em>settings</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether the web security is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>settings object to query whether web security is enabled</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>EINA_TRUE</code> if the web security is enabled <code>EINA_FALSE</code> if not or on failure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1a8cbc22a060d1f78770e3009636d72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EAPI Eina_Bool ewk_settings_web_security_enabled_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d2d/ewk__settings_8h.html#ada7eb98b6e90b8cbb4240688e4a93f0b">Ewk_Settings</a> *&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eina_Bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables/disables web security.</p>
+<p>By default, the web security is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>settings object to set the web security </td></tr>
+    <tr><td class="paramname">enable</td><td><code>EINA_TRUE</code> to enable the web security <code>EINA_FALSE</code> to disable</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>EINA_TRUE</code> on success or <code>EINA_FALSE</code> on failure</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d4/d2d/ewk__settings_8h.html#a5b00dfc3562994c597e119717fb8a8c6">ewk_settings_web_security_enabled_get()</a> </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 17 2014 04:17:08 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
