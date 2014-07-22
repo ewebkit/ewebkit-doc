@@ -11,3 +11,6 @@ ln -s /path/of/your/webkit/folder efl-webkit
 # For ewebkit2
 cd ewebkit2
 doxygen
+
+# Web Page for last generated doxygen
+http://ewebkit.github.io/ewebkit-doc
