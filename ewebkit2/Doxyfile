@@ -34,7 +34,7 @@ PROJECT_NAME           = "ewebkit2"
 # This could be handy for archiving the generated documentation or
 # if some version control system is used.
 
-PROJECT_NUMBER         = 0.1.0
+PROJECT_NUMBER         = 1.11.0
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer
@@ -654,7 +654,7 @@ WARN_LOGFILE           =
 # directories like "/usr/src/myproject". Separate the files or directories
 # with spaces.
 
-INPUT                  = ../efl-webkit/Source/WebKit2/UIProcess/API/efl
+INPUT                  = ../efl-webkit/Source/WebKit2/UIProcess/API/efl ../efl-webkit/Source/WebKit2/WebProcess/InjectedBundle/API/efl
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
@@ -1286,7 +1286,7 @@ EXTRA_SEARCH_MAPPINGS  =
 # If the GENERATE_LATEX tag is set to YES (the default) Doxygen will
 # generate Latex output.
 
-GENERATE_LATEX         = YES
+GENERATE_LATEX         = NO
 
 # The LATEX_OUTPUT tag is used to specify where the LaTeX docs will be put.
 # If a relative path is entered the value of OUTPUT_DIRECTORY will be
@@ -1675,7 +1675,7 @@ PERL_PATH              = /usr/bin/perl
 # this option also works with HAVE_DOT disabled, but it is recommended to
 # install and use dot, since it yields more powerful graphs.
 
-CLASS_DIAGRAMS         = YES
+CLASS_DIAGRAMS         = NO
 
 # You can define message sequence charts within doxygen comments using the \msc
 # command. Doxygen will then run the mscgen tool (see
