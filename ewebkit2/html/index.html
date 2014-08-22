@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>ewebkit2: Main Page</title>
+<title>ewebkit2: EWebKit2</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ewebkit2
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">1.11.0</span>
    </div>
    <div id="projectbrief">Web engine based on WebKit2 for EFL</div>
   </td>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,13 +76,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ewebkit2 Documentation</div>  </div>
+<div class="title">EWebKit2 </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+What is EWebKit2?</h1>
+<p>This is the web engine for the Enlightenment Foundation Libraries, which is based on WebKit(especially WebKit2).</p>
+<p>EWebKit2 is based on Eina, Ecore and Evas. (EWebKit2 does not require Elementary. If you want to use ewebkit2 in Elementary, consider to use elm_web)</p>
+<p>And, ewebkit2 may require glib (for internal purpose) because it depends on several glib based components such as libsoup, gstreamer... (at least now).</p>
+<h1><a class="anchor" id="start"></a>
+Getting Started.</h1>
+<p>Like other EFL libraries, ewebkit2 also has <a class="el" href="d6/d82/ewk__main_8h.html#a24c00081b522e15b3c379a0ceffaba66">ewk_init()</a> and <a class="el" href="d6/d82/ewk__main_8h.html#a80f9c8ecdd85f0081e9a424a79947fb0">ewk_shutdown()</a>.</p>
+<p>You should call <a class="el" href="d6/d82/ewk__main_8h.html#a24c00081b522e15b3c379a0ceffaba66">ewk_init()</a> before using ewebkit APIs and ewk_shudown() before finishing the process.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;EWebKit2.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div>
+<div class="line">{</div>
+<div class="line">   <a class="code" href="d6/d82/ewk__main_8h.html#a24c00081b522e15b3c379a0ceffaba66">ewk_init</a>();</div>
+<div class="line">   <span class="comment">// create window(s) and ewk_view here and do what you want including event loop.</span></div>
+<div class="line">   <a class="code" href="d6/d82/ewk__main_8h.html#a80f9c8ecdd85f0081e9a424a79947fb0">ewk_shutdown</a>();</div>
+<div class="line">   <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>To compile your application with ewebkit2, you should compile with like below.</p>
+<div class="fragment"><div class="line">gcc sample.c `pkg-config --cflags --libs ewebkit2`</div>
+</div><!-- fragment --><p>If you are using CMake, you can include below in your CMakeLists.txt.</p>
+<div class="fragment"><div class="line">find_package(EWebKit2 REQUIRED)</div>
+</div><!-- fragment --><p>Below example is simple application which loads enlightenment.org.</p>
+<div class="fragment"><div class="line"><span class="comment">// gcc simple.c `pkg-config --cflags --libs ecore-evas ewebkit2`</span></div>
+<div class="line"><span class="preprocessor">#include &lt;Evas.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;Ecore_Evas.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;EWebKit2.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">   Evas *evas;</div>
+<div class="line">   Ecore_Evas *win;</div>
+<div class="line">   Evas_Object *ewk;</div>
+<div class="line"></div>
+<div class="line">   evas_init();</div>
+<div class="line">   ecore_init();</div>
+<div class="line">   ecore_evas_init();</div>
+<div class="line">   <a class="code" href="d6/d82/ewk__main_8h.html#a24c00081b522e15b3c379a0ceffaba66">ewk_init</a>();</div>
+<div class="line"></div>
+<div class="line">   win = ecore_evas_new(NULL, 0, 0, 800, 600, NULL);</div>
+<div class="line">   evas = ecore_evas_get(win);</div>
+<div class="line">   ecore_evas_show(win);</div>
+<div class="line"></div>
+<div class="line">   ewk = <a class="code" href="d6/daf/ewk__view_8h.html#af8ef52dca7685280ad63f267101cbb01">ewk_view_add</a>(evas);</div>
+<div class="line">   <a class="code" href="d6/daf/ewk__view_8h.html#a2b0cfe61e005dcee0d123fc0b3869304">ewk_view_url_set</a>(ewk, <span class="stringliteral">&quot;http://enlightenment.org&quot;</span>);</div>
+<div class="line">   evas_object_move(ewk, 0, 0);</div>
+<div class="line">   evas_object_resize(ewk, 800, 600);</div>
+<div class="line">   evas_object_show(ewk);</div>
+<div class="line"></div>
+<div class="line">   ecore_main_loop_begin();</div>
+<div class="line"></div>
+<div class="line">   <a class="code" href="d6/d82/ewk__main_8h.html#a80f9c8ecdd85f0081e9a424a79947fb0">ewk_shutdown</a>();</div>
+<div class="line">   ecore_evas_shutdown();</div>
+<div class="line">   ecore_shutdown();</div>
+<div class="line">   evas_shutdown();</div>
+<div class="line"></div>
+<div class="line">   <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 22 2014 10:36:53 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 22 2014 09:33:55 for ewebkit2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ewebkit2_2eh',['EWebKit2.h',['../df/d58/EWebKit2_8h.html',1,'']]],
   ['ewk_5fapplication_5fcache_5fmanager_2eh',['ewk_application_cache_manager.h',['../da/d32/ewk__application__cache__manager_8h.html',1,'']]],
   ['ewk_5fauth_5frequest_2eh',['ewk_auth_request.h',['../da/d3f/ewk__auth__request_8h.html',1,'']]],
   ['ewk_5fback_5fforward_5flist_2eh',['ewk_back_forward_list.h',['../d3/dae/ewk__back__forward__list_8h.html',1,'']]],
@@ -10,7 +9,6 @@ var searchData=
   ['ewk_5fcontext_5fmenu_5fitem_2eh',['ewk_context_menu_item.h',['../d7/dd8/ewk__context__menu__item_8h.html',1,'']]],
   ['ewk_5fcookie_5fmanager_2eh',['ewk_cookie_manager.h',['../d9/d91/ewk__cookie__manager_8h.html',1,'']]],
   ['ewk_5fdatabase_5fmanager_2eh',['ewk_database_manager.h',['../dd/d80/ewk__database__manager_8h.html',1,'']]],
-  ['ewk_5fdefines_2eh',['ewk_defines.h',['../d0/d1a/ewk__defines_8h.html',1,'']]],
   ['ewk_5fdownload_5fjob_2eh',['ewk_download_job.h',['../d2/da9/ewk__download__job_8h.html',1,'']]],
   ['ewk_5ferror_2eh',['ewk_error.h',['../d9/dab/ewk__error_8h.html',1,'']]],
   ['ewk_5ffavicon_5fdatabase_2eh',['ewk_favicon_database.h',['../de/d6c/ewk__favicon__database_8h.html',1,'']]],
